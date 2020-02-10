@@ -1,0 +1,171 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: auto;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+.logo{
+     width: 300px;
+     height: 150px;
+}
+i{
+    margin-right: 30px;
+}
+span{
+    margin-right: 10px;
+    position: relative;
+}
+.left-items{
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+  
+   width: 15%;
+   height: 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 40%;
+
+    
+}
+nav > a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+  
+} 
+span.icon{
+
+   
+    padding: 3px;
+}
+
+section{
+    
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template: repeat(2, 2fr)/repeat(3, 450px);
+   grid-gap: 20px;
+
+}
+section > div{
+    margin-top: 60px;
+}
+section > div  img{
+    width: 370px;
+    
+}
+P{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.pagmentation > a{
+    text-decoration: none;
+    margin-top: 30px;
+    color: black;
+    font-size: 30px;
+}
+.pagmentation{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+footer > div > .fa{
+    font-size: 30px;
+    
+}
+.hambuger{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+.line{
+    position: absolute;
+    width: 30px; 
+    height: 2px;
+    background: rgb(77, 76, 76);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.top{
+    top: 10%;
+}
+.middle{
+    top: 17%;
+}
+.buttom{
+    top: 22%
+}
+.change .top{
+    top: 28%;
+    transform: rotate(-45deg);
+}
+.change .middle{
+    top: 28%;
+    transform: rotate(45deg);
+    
+}
+.change .buttom{
+    top: 28%;
+    transform: rotate(-45deg);
+}
+
+.nav-list{
+ position: relative;
+visibility: hidden;
+top: 50px;
+right: 400px;
+padding: 30px;
+z-index: -1;
+font-size: 30px;
+
+
+background-color: blanchedalmond;
+border: 2px solid red;
+}
+.nav-list ul{
+    list-style: none;
+    padding: auto;
+    margin: auto;
+   
+   
+}
+.nav-list ul li a{
+    color: rgb(235, 168, 24);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    line-height: 50px;   
+}
+
+.nav-toggle{
+    visibility: visible; 
+   
+}
