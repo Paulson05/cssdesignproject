@@ -29,9 +29,93 @@ img{
     width:100%; 
    
 }
+.tabs{
+    /* background-color: rgb(35, 36, 35); */
+    padding-top: 1rem;
+    border-bottom: 3px solid rgb(14, 13, 13);
+    
+
+}
+
+.container  button.tab-border{
+    border-bottom:2px solid rgb(209, 15, 15);
+}
+.container button{
+    margin-left: 100px;
+    width: 7rem;
+    font-size: 1.2rem;
+    background-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    color: rgb(230, 236, 236);
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    list-style: none;
+}
+ul li{
+    list-style: none;
+    font-size: 30px;
+}
+.heading-about{
+   font-size: 43px;
+}
+.p-about{
+    font-size: 40px;
+    font-style: italic;
+}
+.skill-btn{
+    font-size: 50px;
+}
+
+/*     */
+.tab-content{
+     padding:3rem 0;
+     color:white;
+     /* background-color: black ; */
+}
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content,
+#tab-5-content
+{
+    display:none;
+}
+.show{
+    display:block !important;
+}
+#tab-1-content .tab-1-content-inner{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+      grid-gap:  2rem;
+      align-items: center;
+      justify-content: center  ;
+      text-align: center;
+   }
+   #tab-2-content .tab-2-content-top{
+       display:grid;
+       grid-template-columns:2fr 1fr;
+       grid-gap  :1rem;
+       align-items: center;
+      justify-content: center  ; 
+   }
+   #tab-2-content .tab-2-content-bottom{
+       display:grid;
+       grid-template-columns:repeat(3, 1fr);
+       grid-gap  :2rem;
+       align-items: center;
+      justify-content: center  ; 
+      text-align: center ;
+   }
 .showcase{
  width:100%;
- height:93vh;
+ height:63vh;
  position: relative;
  background: url(images/bac.jpg) no-repeat center center/cover;
 }
@@ -43,7 +127,7 @@ img{
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgb(0, 0, 0, 0.6);
+  
     box-shadow: inset 120px 100px 250px rgb(17, 17, 17) inset -120px -100px -250px rgb(10, 10, 10); 
 }
 .showcase-top{
@@ -147,16 +231,18 @@ img{
 }
 
 .text {
-    color: #e62f2f;
+    color: #e9dcdc;
     font-size: 35px;
     padding-top: 12px;
   padding-bottom: 12px;
     position: absolute;
-    top: 500px;
-    left: 1px;
-    width: 100%;
+    top: 700px;
+    
+    margin: auto;
+    border: 1px solid black;
+    width: 50%;
     text-align: center;
-    background-color: #222428
+    /* background-color: #222428 */
 }
 
 .numbertext {
@@ -164,7 +250,7 @@ img{
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0
+    top: 0;
 }
 
 .dot {
@@ -174,26 +260,27 @@ img{
     height: 25px;
     width: 25px;
     margin: 0 2px;
-    background-color: rgb(226, 88, 88);
+    background-color: rgb(219, 214, 214);
     border-radius: 50%;
     display: inline-block;
     transition: background-color .6s ease
 }
 
 .active, .dot:hover {
-    background-color: #2e302e
+    background-color: #d30e0e
 }
 
  .tabs{
      background-color: rgb(16, 116, 16);
      padding-top: 1rem;
      margin-top: 6rem;
+     
      border-bottom: 3px solid rgb(14, 13, 13);
       
  }
  .tabs .container{
      display:grid;
-    
+     
      grid-template-columns: repeat(4, 1fr);
      grid-gap:1rem;
      justify-content: center;
@@ -213,7 +300,7 @@ img{
      cursor:pointer;
  }
  .tab-border{
-     border-bottom:2px solid rgb(209, 15, 15);
+     border-bottom:2px solid rgb(228, 215, 215);
  }   
  .tab-content{
       padding:3rem 0;
@@ -468,18 +555,61 @@ font-size: 15px;
    .text-xl{
        font-size:1.5rem;
    }
-   .text-lg{
-       font: size 1.3rem;
-   }
+  
   .md{
       font-size:1.8rem;
   }
  }
  @media(max-width:700px){
+    .showcase{
+        
+        height:93vh;
+        position: relative;
+        background: url(images/bac.jpg) no-repeat center center/cover;
+       }
+       .text {
+        color: #e9dcdc;
+        font-size: 35px;
+        padding-top: 12px;
+      padding-bottom: 12px;
+        position: absolute;
+        top: 700px;
+        left:8px;
+        margin: auto;
+        border: 1px solid black;
+        width: 98%;
+        text-align: center;
+        /* background-color: #222428 */
+       }    
     .showcase::after{
     box-shadow: inset 120px 100px 250 black -120px -100px -250px;
        
        }
+       .tabs{
+
+        padding-top: 1rem;
+        margin-top: 6rem;
+        border-bottom: 3px solid rgb(14, 13, 13);
+         width: 950px;
+    }
+       .tabs .container{
+        display:grid;
+       
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items:center;
+        text-align:center;
+        margin-left: 1px;
+        width: 2000px !important;
+    }
+
+    .tabs .container {
+        width:2000px !important;
+        
+    }
+    .tabs .container > div{
+      
+    }
       
        .hide-sm{
         display:block;
@@ -488,7 +618,7 @@ font-size: 15px;
     }
  p.hide-sm {
    
-        font-size: 12px;
+        font-size: 20px;
         font-weight: bolder;
     }
     .dot {

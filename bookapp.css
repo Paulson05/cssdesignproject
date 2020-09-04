@@ -1,0 +1,51 @@
+.container h1{
+    text-align: center;
+    font-style: italic;
+}
+input{
+    width: 100%;
+}
+
+table{
+    background-color: rgb(218, 224, 212); 
+    width: 100%; 
+    
+}
+thead th{
+padding: 20px;
+font-size: 23px;
+
+}
+ td{
+    text-align: center;
+    color:blue;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-top:10px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: red;
+}
+label{
+    color:white;
+    font-size: 30px;
+}
+.submit{
+    background:rgb(87, 87, 145);
+    border:none;
+    color: white;
+    font-size: 20px;
+    outline: line;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.add{
+    background: blue;
+    
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
