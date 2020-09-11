@@ -366,7 +366,7 @@ ul li{
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 3; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -404,6 +404,47 @@ ul li{
     animation-name: zoom;
     animation-duration: 0.6s;
 }
+.img-box{
+    position: relative;
+    overflow: hidden;
+    margin-left: 0px;
+}
+.img-box:hover .bag-btn{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.bag-btn span{
+    color:red;
+  
+}
+.bag-btn{
+    position: absolute;
+    top: 40%;
+    right: 0;
+  
+    background: rgb(44, 24, 153);
+    color: red;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1.75rem;
+    transform: translateX(101%);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transform: translateX(101%);  
+    -moz-transform: translateX(101%);
+    -ms-transform: translateX(101%);
+    -o-transform: translateX(101%);
+}
+.bag-btn:hover{
+    color: rgb(119, 131, 7);
+}
+
 
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)}
